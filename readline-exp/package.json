@@ -1,0 +1,7 @@
+{
+  "name": "readline-exp",
+  "version": "0.0.1",
+  "description": "readline experiment",
+  "main": "index.js",
+  "license": "CC0-1.0"
+}
