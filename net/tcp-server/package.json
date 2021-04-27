@@ -1,0 +1,10 @@
+{
+  "name": "tcp-server",
+  "version": "0.0.1",
+  "description": "TCP server for Node.js",
+  "main": "index.js",
+  "license": "CC0-1.0",
+  "scripts": {
+      "start": "node index.js"
+  }
+}
