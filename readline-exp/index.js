@@ -13,6 +13,7 @@ rl.on("close", (line) => {
 rl.on("line", (line) => {
     console.log("line Event.");
     console.log({line: line});
+    rl.prompt();
 });
 
 rl.on("history", (line) => {
@@ -33,8 +34,11 @@ rl.on("SIGCONT", (line) => {
 
 rl.on("SIGINT", (line) => {
     console.log("SIGINT Event.");
+    rl.prompt();
 });
 
 rl.on("SIGTSTP", (line) => {
     console.log("SIGTSTP Event.");
 });
+
+rl.prompt();
