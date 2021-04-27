@@ -1,7 +1,7 @@
 {
-  "name": "tcp-server",
+  "name": "tcp-server-exp",
   "version": "0.0.1",
-  "description": "TCP server for Node.js",
+  "description": "TCP server experiment for Node.js",
   "main": "index.js",
   "license": "CC0-1.0",
   "scripts": {

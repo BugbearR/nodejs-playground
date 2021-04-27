@@ -25,6 +25,7 @@ const server = net.createServer((socket) => {
     socket.on("data", (data) => {
         console.log("socket data Event.");
         console.log({data: data});
+        socket.write(data); // echo
     });
 });
 
