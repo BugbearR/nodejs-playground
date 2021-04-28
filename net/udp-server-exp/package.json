@@ -1,0 +1,7 @@
+{
+  "name": "udp-server-exp",
+  "version": "0.0.1",
+  "description": "UDP server experiment for Node.js",
+  "main": "index.js",
+  "license": "CC0-1.0"
+}

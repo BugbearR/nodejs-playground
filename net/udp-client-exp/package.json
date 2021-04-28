@@ -1,0 +1,7 @@
+{
+  "name": "udp-cliend-exp",
+  "version": "0.0.1",
+  "description": "UDP client experiment for Node.js",
+  "main": "index.js",
+  "license": "CC0-1.0"
+}
