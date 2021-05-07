@@ -1,0 +1,14 @@
+{
+  "name": "express-exp",
+  "version": "1.0.0",
+  "description": "Sample Node.js express",
+  "main": "index.js",
+  "author": "BugbearR <bugbearr@bugbearr.jp>",
+  "license": "CC0-1.0",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "scripts": {
+    "start": "node index.js"
+  }
+}
