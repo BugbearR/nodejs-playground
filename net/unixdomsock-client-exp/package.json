@@ -1,0 +1,7 @@
+{
+  "name": "unixdomsock-server-exp",
+  "version": "0.0.1",
+  "description": "Unix domain socket client experiment for Node.js",
+  "main": "index.js",
+  "license": "CC0-1.0"
+}
