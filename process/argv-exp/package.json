@@ -1,0 +1,10 @@
+{
+  "name": "process-argv-exp",
+  "version": "0.0.1",
+  "description": "process.argv experiment for Node.js",
+  "main": "index.js",
+  "license": "CC0-1.0",
+  "scripts": {
+      "start": "node index.js"
+  }
+}
