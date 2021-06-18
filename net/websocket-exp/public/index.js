@@ -6,7 +6,7 @@
     function sendPendingMsgs() {
         if ( pendingMsgs.length > 0 ) {
             var reqClose = false;
-            pendingMsgs.forEach((msg) => {
+            pendingMsgs.forEach( function (msg) {
                 if (msg.type === "close") {
                     reqClose = true;
                     return;
