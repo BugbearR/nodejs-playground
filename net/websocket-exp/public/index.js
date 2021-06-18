@@ -165,9 +165,9 @@
 
     function init() {
         // alert("Hello, Websocket!");
-        document.getElementById("loginButton").addEventListener("click", onLoginButton);        
-        document.getElementById("logoutButton").addEventListener("click", onLogoutButton);        
-        document.getElementById("sendButton").addEventListener("click", sendMessage);        
+        document.getElementById("loginButton").addEventListener("click", onLoginButton);
+        document.getElementById("logoutButton").addEventListener("click", onLogoutButton);
+        document.getElementById("sendButton").addEventListener("click", sendMessage);
 
         document.getElementById("logoutButton").disabled = true;
     }
