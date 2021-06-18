@@ -1,0 +1,9 @@
+{
+  "name": "json_schema_validation",
+  "version": "0.0.1",
+  "main": "index.js",
+  "license": "CC0-1.0",
+  "dependencies": {
+    "jsonschema": "^1.4.0"
+  }
+}
