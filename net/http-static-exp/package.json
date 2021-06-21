@@ -1,0 +1,10 @@
+{
+  "name": "http-static-exp",
+  "version": "0.0.1",
+  "description": "HTTP static content server",
+  "main": "index.js",
+  "license": "CC0-1.0",
+  "scripts": {
+    "start": "node index.js"
+  }
+}
