@@ -1,8 +1,5 @@
 // from https://stackoverflow.com/questions/16333790/node-js-quick-file-server-static-files-over-http
 
-// import http from "http";
-// import fs from "fs";
-// import path from "path";
 const http = require("http");
 const fs = require("fs");
 const path = require("path");
