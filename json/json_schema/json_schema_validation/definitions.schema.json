@@ -4,7 +4,7 @@
     "definitions": {
         "id": {
             "type": "string",
-            "pattern": "[A-Z]{1,4}"
+            "pattern": "^[A-Z]{1,4}$"
         }
     }
 }

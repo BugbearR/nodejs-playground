@@ -5,5 +5,8 @@
   "license": "CC0-1.0",
   "dependencies": {
     "jsonschema": "^1.4.0"
+  },
+  "scripts": {
+    "run_sample": "node index.js sample.schema.json definitions.schema.json sample.json"
   }
 }

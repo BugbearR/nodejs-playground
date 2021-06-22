@@ -1,7 +1,7 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema",
     "$id": "sample.schema.json",
-    "definitions": {
+    "##definitions": {
         "id": {
             "type": "string",
             "pattern": "^[A-Z]{1,4}$"
@@ -9,8 +9,8 @@
     },
     "type": "object",
     "properties": {
-        "#foo_id": { "type": "string", "pattern": "^[A-Z]{1,4}$" },
-        "#bar_id": { "type": "string", "pattern": "^[A-Z]{1,4}$" },
+        "##foo_id": { "type": "string", "pattern": "^[A-Z]{1,4}$" },
+        "##bar_id": { "type": "string", "pattern": "^[A-Z]{1,4}$" },
         "foo_id": { "$ref": "#/definitions/id" },
         "bar_id": { "$ref": "#/definitions/id" }
     }

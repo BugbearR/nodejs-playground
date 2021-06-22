@@ -15,6 +15,15 @@ console.log(schemaJson);
 const schema = JSON.parse(schemaJson);
 console.log(schema);
 
+if (definitionsPath !== "") {
+    const definitionsJson = fs.readFileSync(definitionsPath);
+    console.log(definitionsJson);
+    const definitions = JSON.parse(definitionsJson);
+    console.log(definitions);
+
+    schema.definitions = definitions.definitions;
+}
+
 const dataJson = fs.readFileSync(dataPath);
 console.log(dataJson);
 const data = JSON.parse(dataJson);
