@@ -1,0 +1,10 @@
+{
+  "name": "@bugbearr/read-by-line",
+  "version": "0.0.1",
+  "description": "Read file line by line",
+  "main": "index.js",
+  "license": "CC0-1.0",
+  "bin": {
+      "read_by_line": "./index.js"
+  }
+}
