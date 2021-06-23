@@ -1,0 +1,10 @@
+{
+  "name": "cleartimeout-nothing-exp",
+  "version": "0.0.1",
+  "description": "apply nothing value to crearTimeout()",
+  "main": "index.js",
+  "license": "CC0-1.0",
+  "scripts": {
+      "start": "node index.js"
+  }
+}
