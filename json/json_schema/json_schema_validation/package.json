@@ -1,0 +1,12 @@
+{
+  "name": "json_schema_validation",
+  "version": "0.0.1",
+  "main": "index.js",
+  "license": "CC0-1.0",
+  "dependencies": {
+    "jsonschema": "^1.4.0"
+  },
+  "scripts": {
+    "run_sample": "node index.js sample.schema.json definitions.schema.json sample.json"
+  }
+}

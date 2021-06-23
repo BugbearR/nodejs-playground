@@ -33,13 +33,16 @@ wsServer.on("connection", (wsSocket, req) => {
     //     }
     // }
     if (!remoteAddr) {
-        remoteAddr = req.connection.remoteAddress;
+        remoteAddr = (req.socket && req.socket.remoteAdress) || req.connection.remoteAddress;
     }
     if (!remotePort) {
-        remotePort = req.connection.remotePort;
+        remotePort = (req.socket && req.socket.remotePort) || req.connection.remotePort;
     }
     console.log("remoteAddress:", remoteAddr);
     console.log("remotePort:", remotePort);
+    setInterval(function () {
+        wsSocket.ping("Hello!");
+    }, 10000);
 
 //    console.log("wsServer.clients:", wsServer.clients);
 
@@ -57,6 +60,9 @@ wsServer.on("connection", (wsSocket, req) => {
     // wsSocket.on("error", function (evt) {
 
     // })
+    wsSocket.on("pong", (e) => {
+        console.log("OK, pong received.", e);
+    });
 
     wsSocket.on("message", (msgOrg) => {
         var msg = JSON.parse(msgOrg);

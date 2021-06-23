@@ -1,0 +1,10 @@
+{
+  "name": "http-helloworld",
+  "version": "0.0.1",
+  "description": "HTTP Hello, world! server",
+  "main": "index.js",
+  "license": "CC0-1.0",
+  "scripts": {
+    "start": "node index.js"
+  }
+}
