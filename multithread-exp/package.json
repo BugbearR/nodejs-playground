@@ -1,0 +1,11 @@
+{
+  "name": "@bugbearr/mutithread-exp",
+  "version": "0.0.1",
+  "description": "Multithread experiment",
+  "main": "index.js",
+  "license": "CC0-1.0",
+  "devDependencies": {},
+  "scripts": {
+    "start": "node index.js"
+  }
+}
