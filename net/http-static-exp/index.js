@@ -22,7 +22,14 @@ function normalizeUrlPath(pathStr) {
             continue;
         }
 
-        const pathItemDec = decodeURIComponent(pathItem);
+        let pathItemDec = undefined;
+        try {
+            pathItemDec = decodeURIComponent(pathItem);
+        }
+        catch (e) {
+            console.log("invalid sequence included.")
+            return undefined;
+        }
         // if contained separator then invalid.
         if (/[\/\\]/.test(pathItemDec)) {
             console.log("invalid separator included.")
