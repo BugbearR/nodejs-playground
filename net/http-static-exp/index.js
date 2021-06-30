@@ -13,6 +13,25 @@ function putContentTextPlainUTF8(res, status, body) {
     res.end(utf8Body);
 }
 
+// https://docs.microsoft.com/en-us/windows/win32/fileio/naming-a-file
+function isReservedPathByWindows(s) {
+    return (/^(CON|PRN|AUX|NUL|COM[0-9]|LPT[0-9])$/i).test(s);
+}
+
+function isContainsInvalidPathCharByWindows(s) {
+    return /[<>:"/\\|?*]/.test(s);
+}
+
+// function escapeInvalidPathCharByWindows(s) {
+//     return s.replace(/[<>:"/\\|?*]/, (c) => {
+//         return "%" + c.charCodeAt(0).toString(16);
+//     });
+// }
+
+function isValidPathItem(s) {
+    return !isReservedPathByWindows(s) && !isContainsInvalidPathCharByWindows(s);
+}
+
 function normalizeUrlPath(pathStr) {
     const pathArr = pathStr.split("/");
     const newPathArr = [""];
@@ -33,6 +52,11 @@ function normalizeUrlPath(pathStr) {
         // if contained separator then invalid.
         if (/[\/\\]/.test(pathItemDec)) {
             console.log("invalid separator included.")
+            return undefined;
+        }
+
+        if (!isValidPathItem(pathItemDec)) {
+            console.log("invalid path item included.")
             return undefined;
         }
 
