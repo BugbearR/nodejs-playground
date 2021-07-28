@@ -4,7 +4,7 @@ let port = 3000;
 let host = undefined;
 // host = "192.168.1.1";
 
-const server = net.createServer((socket) => {
+function connectionListener(socket) {
     console.log("server connection Event.");
     console.log(socket.address());
 
@@ -27,7 +27,11 @@ const server = net.createServer((socket) => {
         console.log({data: data});
         socket.write(data); // echo
     });
-});
+}
+
+const server = net.createServer(/* connectionListener */);
+
+server.on("connection", connectionListener);
 
 server.on("error", (err) => {
     console.log("server error Event.");
@@ -37,10 +41,6 @@ server.on("error", (err) => {
 server.on("close", () => {
     console.log("server close Event.");
 });
-
-// server.on("connection", () => {
-//     console.log("server connection Event.")
-// });
 
 server.on("listening", () => {
     console.log("server listening Event.");
