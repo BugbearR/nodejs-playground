@@ -1,0 +1,11 @@
+[
+[ "txt", "text/plain", true ],
+[ "html", "text/html", true ],
+[ "js", "text/javascript", true ],
+[ "css", "text/css", true ],
+[ "json", "application/json", true ],
+[ "png", "image/png", false ],
+[ "jpg", "image/jpeg", false ],
+[ "jpeg", "image/jpeg", false ],
+[ "wav", "audio/wav", false ]
+]
