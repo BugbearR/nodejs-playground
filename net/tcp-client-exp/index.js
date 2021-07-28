@@ -82,8 +82,13 @@ client.on("lookup", (err, address, family, host) => {
     });
 });
 
+client.setTimeout(60000, () => {
+    console.log("setTimeout Event.");
+});
+
 client.on("timeout", () => {
     console.log("timeout Event.");
+    client.destroy();
 });
 
 client.on("ready", () => {
