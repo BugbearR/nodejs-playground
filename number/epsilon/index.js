@@ -53,5 +53,5 @@ console.log({
     plusEpsilon: plusEpsilon,
     minusEpsilon: minusEpsilon,
     n_plusEpsilon: n + plusEpsilon,
-    n_minusEpsilon: n - plusEpsilon,
+    n_minusEpsilon: n - minusEpsilon,
 });
