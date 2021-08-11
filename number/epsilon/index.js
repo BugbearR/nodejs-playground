@@ -2,9 +2,20 @@ function findPlusEpsilon(n) {
     let eps = 1;
     let preEps;
     while (n + eps == n) {
+        // console.log(eps);
+        if (eps === Infinity) {
+            return Infinity;
+        }
         eps *= 2;
     }
+    if (eps === Infinity) {
+        return Infinity;
+    }
     while (n + eps != n) {
+        // console.log(eps);
+        if (eps === 0) {
+            return 0;
+        }
         preEps = eps
         eps /= 2;
     }
@@ -15,9 +26,20 @@ function findMinusEpsilon(n) {
     let eps = 1;
     let preEps;
     while (n - eps == n) {
+        // console.log(eps);
+        if (eps === Infinity) {
+            return Infinity;
+        }
         eps *= 2;
     }
+    if (eps === Infinity) {
+        return Infinity;
+    }
     while (n - eps != n) {
+        // console.log(eps);
+        if (eps === 0) {
+            return 0;
+        }
         preEps = eps
         eps /= 2;
     }
