@@ -6,6 +6,8 @@ const SOCKET_FILE = "/tmp/unixdomsock.sock";
 const server = net.createServer((connection) => {
     console.log("connected.");
     connection.setDefaultEncoding("utf8");
+    console.log(connection);
+
     connection.on("close", (err) => {
         console.log("close Event.");
     });
@@ -15,15 +17,16 @@ const server = net.createServer((connection) => {
         console.log({message: err.message, stack: err.stack});
         console.log(err);
     });
-    
+
     connection.on("data", (data) => {
         console.log("data Event.");
         console.log(data.toString());
         if (data.toString().startsWith("quit")) {
-            connection.write("quit received. bye.");
+            connection.write(data);
             connection.end();
+            return;
         }
-        connection.write('unix domain socket');
+        connection.write(data);
     });
 });
 
