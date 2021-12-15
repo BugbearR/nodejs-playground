@@ -10,6 +10,7 @@ async function main()
 
     const filePath = process.argv[2];
 
+    // see https://nodejs.org/docs/latest-v12.x/api/fs.html#fs_fspromises_readfile_path_options
     const jsonObj = JSON.parse(await fs.promises.readFile(filePath, 'UTF-8'));
 
     console.log(jsonObj);
