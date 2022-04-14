@@ -1,0 +1,7 @@
+{
+  "name": "@bugbearr/set-to-array-exp",
+  "version": "0.0.1",
+  "description": "Set collection to array",
+  "main": "index.js",
+  "license": "CC0-1.0"
+}

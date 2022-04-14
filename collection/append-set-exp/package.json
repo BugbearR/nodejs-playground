@@ -1,0 +1,7 @@
+{
+  "name": "@bugbearr/append-set-exp",
+  "version": "0.0.1",
+  "description": "Append set exp",
+  "main": "index.js",
+  "license": "CC0-1.0"
+}

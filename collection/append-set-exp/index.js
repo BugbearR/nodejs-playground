@@ -1,0 +1,11 @@
+const o1 = new Set();
+const o2 = new Set();
+o1.add('a');
+o1.add('b');
+o1.add('c');
+o2.add('b');
+o2.add('c');
+o2.add('d');
+const o = new Set([...o1, ...o2]);
+const r = Array.from(o);
+console.log(r);
