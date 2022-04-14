@@ -5,6 +5,9 @@
   "main": "dist/index.js",
   "license": "CC0-1.0",
   "scripts": {
+    "clean": "run-s clean:*",
+    "clean:server": "rimraf dist/server",
+    "clean:client": "rimraf dist/client",
     "build": "run-s build:*",
     "build:server": "babel src/server --out-dir dist/server",
     "build:client": "webpack",
