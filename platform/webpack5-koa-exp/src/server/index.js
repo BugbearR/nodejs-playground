@@ -1,11 +1,15 @@
+import Koa from "koa";
+
 import koaStatic from "koa-static";
 import koaMount from "koa-mount";
-import Koa from "koa";
+import router from "./routes";
 
 const koa = new Koa();
 
-koa.use(koaMount("/example", koaStatic("dist/client/example", { format: false })));
-koa.use(koaStatic("dist/client/root", { format: false }));
+koa.use(koaMount("/example", koaStatic("dist/client/example", { format: false })))
+    .use(koaStatic("dist/client/root", { format: false }))
+    .use(router.routes())
+    .use(router.allowedMethods());
 
 koa.listen(3000);
 
