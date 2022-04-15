@@ -1,0 +1,10 @@
+{
+  "name": "@bugbearr/glob-exp",
+  "version": "0.0.1",
+  "description": "glob experiment",
+  "main": "index.js",
+  "license": "CC0-1.0",
+  "dependencies": {
+    "glob": "^8.0.1"
+  }
+}
