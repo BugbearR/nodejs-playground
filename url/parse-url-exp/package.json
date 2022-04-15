@@ -1,0 +1,8 @@
+{
+  "name": "parse-url-exp",
+  "version": "0.0.1",
+  "description": "Parse URL by Node.js standard library",
+  "main": "index.js",
+  "author": "BugbearR",
+  "license": "CC0-1.0"
+}
