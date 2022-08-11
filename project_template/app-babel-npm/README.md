@@ -8,3 +8,8 @@ Transpile latest ECMAScript to Node.js<br/>
 - @babel/cli
 - @babel/preset-env
 - rimraf
+
+```
+npm init
+npm install --save-dev @babel/core @babel/cli @babel/preset-env rimraf
+```

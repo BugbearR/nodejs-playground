@@ -8,3 +8,9 @@ Transpile latest ECMAScript to Node.js<br/>
 - @babel/cli
 - @babel/preset-env
 - rimraf
+
+```
+npm i -g yarn
+yarn init
+yarn add --dev @babel/core @babel/cli @babel/preset-env rimraf
+```
