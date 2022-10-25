@@ -1,0 +1,9 @@
+{
+  "name": "unescape_js_exp",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "CC0-1.0",
+  "dependencies": {
+    "unescape-js": "^1.1.4"
+  }
+}

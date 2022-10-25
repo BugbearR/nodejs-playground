@@ -1,0 +1,7 @@
+{
+  "name": "@bugbearr/async-write-json",
+  "version": "0.0.1",
+  "description": "Write JSON file",
+  "main": "index.js",
+  "license": "CC0-1.0"
+}

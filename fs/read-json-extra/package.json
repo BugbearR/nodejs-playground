@@ -1,0 +1,10 @@
+{
+  "name": "@bugbearr/read-json",
+  "version": "0.0.1",
+  "description": "Read JSON file by fs-extra",
+  "main": "index.js",
+  "license": "CC0-1.0",
+  "dependencies": {
+    "fs-extra": "^10.0.0"
+  }
+}

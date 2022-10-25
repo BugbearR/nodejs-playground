@@ -1,0 +1,21 @@
+{
+  "name": "@bugbearr/app-babel-pnpm",
+  "version": "0.0.1",
+  "description": "Transpile by Babel for Node.js by pnpM",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "babel src --out-dir dist",
+    "clean": "rimraf dist/*",
+    "start": "node dist/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "BugbearR <bugbearr@bugbearr.jp>",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "@babel/cli": "^7.18.10",
+    "@babel/core": "^7.18.10",
+    "@babel/preset-env": "^7.18.10",
+    "rimraf": "^3.0.2"
+  }
+}

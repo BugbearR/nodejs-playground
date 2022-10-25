@@ -1,0 +1,10 @@
+{
+  "name": "@bugbearr/event-manager-mixin",
+  "version": "0.0.1",
+  "description": "Event manager mixin",
+  "main": "index.js",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "jest": "^27.0.5"
+  }
+}

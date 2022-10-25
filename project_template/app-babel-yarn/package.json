@@ -1,0 +1,21 @@
+{
+  "name": "@bugbearr/babel-node-yarn-exp",
+  "description": "Transpile by Babel for Node.js by yarn",
+  "version": "0.0.1",
+  "author": "BugbearR <bugbearr@bugbearr.jp>",
+  "devDependencies": {
+    "@babel/cli": "^7.18.10",
+    "@babel/core": "^7.18.10",
+    "@babel/preset-env": "^7.18.10",
+    "rimraf": "^3.0.2"
+  },
+  "license": "CC0-1.0",
+  "main": "dist/index.js",
+  "repository": "https://github.com/BugbearR/nodejs-playground.git",
+  "scripts": {
+    "build": "babel src --out-dir dist",
+    "clean": "rimraf dist/*",
+    "start": "node dist/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}

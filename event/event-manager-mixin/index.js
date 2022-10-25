@@ -77,7 +77,6 @@ const EventManagerMixin = {
         }
         const args = Array.prototype.slice.call(arguments, 2);
 
-        
         listenerList.forEach((listener) => {
             try {
                 listener.apply(thisArg, args);
