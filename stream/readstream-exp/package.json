@@ -1,0 +1,7 @@
+{
+  "name": "@bugbearr/readstream-exp",
+  "version": "0.0.1",
+  "description": "readStream exp.",
+  "main": "index.js",
+  "license": "CC0-1.0"
+}
