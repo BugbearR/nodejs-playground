@@ -1,0 +1,7 @@
+{
+  "name": "@bugbearr/readdir-exp",
+  "version": "0.0.1",
+  "description": "readdir exp.",
+  "main": "index.js",
+  "license": "CC0-1.0"
+}
