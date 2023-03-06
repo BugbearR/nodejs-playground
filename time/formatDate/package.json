@@ -1,0 +1,14 @@
+{
+  "name": "formatDate",
+  "version": "0.0.1",
+  "main": "index.js",
+  "type": "module",
+  "license": "CC0-1.0",
+  "scripts": {
+    "testonwindows": "set NODE_OPTIONS=--experimental-vm-modules & jest",
+    "test": "NODE_OPTIONS=--experimental-vm-modules jest"
+  },
+  "devDependencies": {
+    "jest": "^29.3.1"
+  }
+}
