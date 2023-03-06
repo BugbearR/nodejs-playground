@@ -2,33 +2,23 @@ const re = / +at (.*) \((.*):([0-9]+):([0-9]+)\)/;
 
 function toStructuredStack(stackStr)
 {
-    const lines = stackStr.split("\n");
-    const stack = [];
-    for (let i = 1, iEnd = lines.length; i < iEnd; i++)
-    {
-        const line = lines[i];
-        const matches = re.exec(line);
-        if (matches)
-        {
-            stack.push(
-                {
-                    func: matches[1],
-                    file: matches[2],
-                    line: matches[3],
-                    column: matches[4]
-                }
-            );
-        }
-        else
-        {
-            stack.push(
-                {
-                    str: line
-                }
-            );
-        }
-    }
-    return stack;
+    return stackStr
+        .split("\n")
+        .flatMap((line) => {
+            const matches = / +at (.*) \((.*):([0-9]+):([0-9]+)\)/.exec(line);
+            if (!matches) {
+                return [];
+            }
+            if (/^node:internal/.test(matches[2])) {
+                return [];
+            }
+            return {
+                func: matches[1],
+                file: matches[2],
+                line: matches[3],
+                column: matches[4]
+            }
+        });
 }
 
 function nest2() {
