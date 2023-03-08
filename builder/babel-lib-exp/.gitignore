@@ -1,0 +1,6 @@
+# External dependencies
+/node_modules/
+
+# Output executables
+/cjs/
+/umd/
