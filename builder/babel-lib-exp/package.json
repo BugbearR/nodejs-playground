@@ -24,9 +24,6 @@
     "clean": "run-s clean:lib clean:umd",
     "clean:lib": "rimraf lib",
     "clean:umd": "rimraf umd",
-    "install": "echo install",
-    "postinstall": "echo postinstall",
-    "preinstall": "echo preinstall",
     "test": "jest"
   },
   "unpkg": "umd/index.js",

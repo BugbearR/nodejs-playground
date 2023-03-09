@@ -1,0 +1,28 @@
+{
+  "name": "esbuild-lib-exp",
+  "description": "esbuild library experiment",
+  "version": "0.1.0",
+  "author": "BugbearR",
+  "devDependencies": {
+    "esbuild": "^0.17.11",
+    "esbuild-jest": "^0.5.0",
+    "jest": "^29.5.0",
+    "rimraf": "^4.4.0"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "keywords": [],
+  "license": "CC0-1.0",
+  "module": "dist/index.js",
+  "private": true,
+  "scripts": {
+    "build": "esbuild src/index.js --bundle --minify --sourcemap --platform=node --target=node14 --outfile=dist/index.js",
+    "clean": "rimraf dist",
+    "test": "jest"
+  }
+}
