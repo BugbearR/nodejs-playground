@@ -1,0 +1,7 @@
+# External dependencies
+/node_modules/
+
+# Output executables
+/lib/
+/esm/
+/umd/
