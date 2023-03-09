@@ -1,4 +1,4 @@
-import * as Bar from "../src/Bar";
+import * as Bar from "../esm/Bar";
 
 describe("Bar test", () => {
     test("test hello", () => {
