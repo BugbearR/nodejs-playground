@@ -1,0 +1,16 @@
+{
+  "name": "@bugbearr/modulus43",
+  "version": "0.0.1",
+  "description": "modulus43",
+  "main": "index.js",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "@babel/core": "^7.14.6",
+    "@babel/preset-env": "^7.14.7",
+    "babel-jest": "^27.0.5",
+    "jest": "^27.0.5"
+  },
+  "scripts": {
+    "test": "jest"
+  }
+}
