@@ -1,5 +1,5 @@
 const fs = require("fs");
-const crypt = require("crypto");
+const crypto = require("crypto");
 
 if (process.argv.length < 3) {
     console.error(`usage: ${process.argv[0]} ${process.argv[1]} file_path`);
@@ -7,7 +7,7 @@ if (process.argv.length < 3) {
 }
 
 const data = fs.readFileSync(process.argv[2]);
-const hashFunc = crypt.createHash("md5");
+const hashFunc = crypto.createHash("md5");
 hashFunc.update(data);
 const hash = hashFunc.digest("hex");
 console.log(hash);
