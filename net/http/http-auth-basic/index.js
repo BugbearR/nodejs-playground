@@ -1,6 +1,7 @@
 const http = require("http");
 
 const server = http.createServer((req, res) => {
+    // RFC 7617 HTTP Basic Access Authentication
 
     if (!req.headers || !req.headers.authorization) {
         res.writeHead(401, {
