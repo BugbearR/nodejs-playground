@@ -3,7 +3,7 @@ services:
   workspace:
     build:
       context: ./docker/workspace
-      dockerfile: Dockerfile 
+      dockerfile: Dockerfile
     volumes:
       - type: bind
         source: ..
