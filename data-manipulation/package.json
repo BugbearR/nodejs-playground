@@ -1,0 +1,20 @@
+{
+  "name": "data-manipulation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "cross-env NODE_OPITONS=--experimental-vm-modules npx jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "@babel/core": "^7.24.7",
+    "@babel/preset-env": "^7.24.7",
+    "babel-jest": "^29.7.0",
+    "cross-env": "^7.0.3",
+    "jest": "^29.7.0"
+  }
+}
