@@ -8,7 +8,7 @@
             "extensions": [
                 "EditorConfig.EditorConfig",
                 "dbaeumer.vscode-eslint", // ESLint
-                "firsttris.vscode-jest-runner" // Jest Runner
+                "Orta.vscode-jest" // Jest
             ]
         }
     }
