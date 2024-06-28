@@ -2,7 +2,7 @@ version: '3'
 services:
   workspace:
     build:
-      context: ./docker/workspace
+      context: ./workspace/docker
       dockerfile: Dockerfile
     volumes:
       - type: bind
